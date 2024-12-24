@@ -72,26 +72,4 @@ a:hover {
     --chart-4: 280, 50%, 60%;
     --chart-5: 340, 65%, 55%;
   }
-
-  .dark {
-    --background: 33, 37, 41;
-    --foreground: 248, 249, 250;
-    --card: 52, 58, 64;
-    --card-foreground: 248, 249, 250;
-    --popover: 52, 58, 64;
-    --popover-foreground: 248, 249, 250;
-    --primary: 248, 249, 250;
-    --primary-foreground: 33, 37, 41;
-    --secondary: 52, 58, 64;
-    --secondary-foreground: 248, 249, 250;
-    --muted: 73, 80, 87;
-    --muted-foreground: 173, 181, 189;
-    --accent: 73, 80, 87;
-    --accent-foreground: 248, 249, 250;
-    --destructive: 200, 30%, 40%;
-    --destructive-foreground: 248, 249, 250;
-    --border: 52, 58, 64;
-    --input: 73, 80, 87;
-    --ring: 52, 58, 64;
-  }
 }

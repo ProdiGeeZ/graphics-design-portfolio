@@ -1,17 +1,7 @@
 import DotPattern from "@/components/magicui/dot-pattern";
-import Particles from "@/components/magicui/particles";
-import { useTheme } from "@/context/useTheme";
-import { useEffect, useState } from "react";
 import InteractiveHoverButton from "@/components/magicui/interactive-hover-button";
 
 export const Hero = () => {
-    const { theme } = useTheme();
-    const [color, setColor] = useState("#ffffff");
-
-    useEffect(() => {
-        setColor(theme === "dark" ? "#000000" : "#ffffff");
-    }, [theme]);
-
     return (
         <div className="pt-40 relative w-full h-[100vh] overflow-hidden">
             <DotPattern
@@ -36,16 +26,9 @@ export const Hero = () => {
                     Specialising in crafting impactful brand experiences.
                 </p>
                 <div className="mt-8 flex items-center gap-4">
-                    <InteractiveHoverButton text={" My Work"} className="rounded-sm" />
+                    <InteractiveHoverButton text={" My Work"} className="rounded-sm text-white" />
                 </div>
             </div>
-            <Particles
-                className="absolute inset-0"
-                quantity={200}
-                ease={80}
-                color={color}
-                refresh
-            />
             <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
                 <div className="w-8 h-12 text-primary">
                     <svg

@@ -23,7 +23,7 @@ export function ClientSection() {
                                 <img
                                     key={idx}
                                     src={logo.src}
-                                    className={`${logo.height} ${logo.width} px-2 dark:brightness-0 dark:invert`}
+                                    className={`${logo.height} ${logo.width} px-2`}
                                 />
                             ))}
                         </div>

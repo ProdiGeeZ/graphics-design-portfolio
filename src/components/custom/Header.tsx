@@ -39,7 +39,7 @@ export function StickyHeader({ containerRef }: { containerRef: React.RefObject<H
                         {navItem.label}
                     </a>
                 ))}
-                <InteractiveHoverButton  className="text-[15px] items-center rounded-sm text-primary border-black" text="Let's Talk!">
+                <InteractiveHoverButton  className="text-[15px] items-center rounded-sm text-white border-black" text="Let's Talk!">
                 </InteractiveHoverButton>
             </nav>
             <button
@@ -72,7 +72,7 @@ export function StickyHeader({ containerRef }: { containerRef: React.RefObject<H
                         ))}
                         <Button
                             variant="outline"
-                            className="text-lg p-3 rounded-sm"
+                            className="text-lg p-3 rounded-sm text-white"
                             onClick={() => setMenuOpen(false)}
                         >
                             Let's Talk.

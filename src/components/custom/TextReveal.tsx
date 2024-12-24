@@ -5,7 +5,7 @@ export function TextReveal() {
         <>
             <TextRevealByWord
                 text="Delivering Design for Decades."
-                className="min-h-[120px] text-3xl sm:text-4xl md:text-7xl lg:text-7xl font-bold text-center break-words max-w-screen overflow-clip justify-center items-center flex"
+                className="min-h-[120px] text-3xl sm:text-4xl md:text-7xl lg:text-7xl font-bold text-center break-words max-w-screen overflow-clip justify-center items-center flex text-black"
             />
         </>
     );
