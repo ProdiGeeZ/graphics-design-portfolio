@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/magicui/button";
 import { useScrollY } from "@/constants/useScrollY";
 import { motion } from "framer-motion";
 import { MenuIcon, X } from "lucide-react";
@@ -39,7 +38,7 @@ export function StickyHeader({ containerRef }: { containerRef: React.RefObject<H
                         {navItem.label}
                     </a>
                 ))}
-                <InteractiveHoverButton  className="text-[15px] items-center rounded-sm text-white border-black" text="Let's Talk!">
+                <InteractiveHoverButton className="text-[15px] items-center rounded-sm text-white border-black" text="Let's Talk!">
                 </InteractiveHoverButton>
             </nav>
             <button
@@ -54,7 +53,7 @@ export function StickyHeader({ containerRef }: { containerRef: React.RefObject<H
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
-                    className="absolute top-20 left-0 w-full text-black bg-[#f5f5f5e3] shadow-lg rounded-b-lg p-2 ease-in-out border border-1"
+                    className="absolute top-20 left-0 w-full text-black bg-[#f5f5f5fa] shadow-lg rounded-b-lg p-2 ease-in-out border border-1"
                 >
                     <nav className="flex flex-col items-right space-y-4 py-4 font-medium">
                         {navLinks.map((navItem) => (
@@ -70,13 +69,8 @@ export function StickyHeader({ containerRef }: { containerRef: React.RefObject<H
                                 </>
                             </a>
                         ))}
-                        <Button
-                            variant="outline"
-                            className="text-lg p-3 rounded-sm text-white"
-                            onClick={() => setMenuOpen(false)}
-                        >
-                            Let's Talk.
-                        </Button>
+                        <InteractiveHoverButton className="text-[15px] w-full rounded-sm text-white border-black p-3" text="Let's Talk!">
+                        </InteractiveHoverButton>
                     </nav>
                 </motion.div>
             )}
