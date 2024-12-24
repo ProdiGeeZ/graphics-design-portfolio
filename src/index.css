@@ -2,40 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Font families defined globally */
-:root {
-  --font-heading: "anek-latin-variable", sans-serif;
-  --font-body: "aileron", sans-serif;
+@font-face {
+  font-family: "GeneralSans-Variable";
+  src: url("/src/assets/fonts/GeneralSans-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
 }
 
-/* Styling for specific elements */
+@font-face {
+  font-family: "GeneralSans-VariableItalic";
+  src: url("/src/assets/fonts/GeneralSans-VariableItalic.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CabinetGrotesk-Variable";
+  src: url("/src/assets/fonts/CabinetGrotesk-Variable.ttf") format("truetype");
+  font-weight: 100 900; 
+  font-style: normal; 
+}
+
+:root {
+  --font-heading: "GeneralSans-Variable", sans-serif;
+  --font-body: "CabinetGrotesk-Variable", sans-serif;
+}
+
 body {
-  @apply font-body text-base text-neutral-900 bg-neutral-50 dark:text-neutral-200 dark:bg-neutral-900;
+  font-family: var(--font-body);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply font-heading font-bold text-neutral-900 dark:text-neutral-200;
+  font-family: var(--font-heading);
 }
 
-/* Links */
 a {
-  @apply font-body font-medium text-blue-600 dark:text-blue-400 no-underline;
+  @apply font-body font-medium no-underline list-none;
 }
 
 a:hover {
-  @apply text-blue-700 dark:text-blue-300;
+  @apply text-inherit;
 }
 
-/* Buttons */
-button {
-  @apply rounded-lg border border-transparent px-4 py-2 font-medium cursor-pointer bg-neutral-200 dark:bg-neutral-800 transition-colors;
-}
+@layer base {
+  :root {
+    --background: 248, 249, 250;
+    --foreground: 52, 58, 64;
+    --card: 248, 249, 250;
+    --card-foreground: 33, 37, 41;
+    --popover: 248, 249, 250;
+    --popover-foreground: 33, 37, 41;
+    --primary: 33, 37, 41;
+    --primary-foreground: 248, 249, 250;
+    --secondary: 222, 226, 230;
+    --secondary-foreground: 52, 58, 64;
+    --muted: 173, 181, 189;
+    --muted-foreground: 108, 117, 125;
+    --accent: 222, 226, 230;
+    --accent-foreground: 52, 58, 64;
+    --destructive: 255, 85, 85;
+    --destructive-foreground: 248, 249, 250;
+    --border: 206, 212, 218;
+    --input: 233, 236, 239;
+    --ring: 52, 58, 64;
+    --radius: 0.5rem;
+    --chart-1: 240, 60%, 50%;
+    --chart-2: 220, 50%, 45%;
+    --chart-3: 30, 70%, 55%;
+    --chart-4: 280, 50%, 60%;
+    --chart-5: 340, 65%, 55%;
+  }
 
-button:hover {
-  @apply border-blue-500;
-}
-
-button:focus,
-button:focus-visible {
-  @apply outline-none ring-2 ring-blue-500;
+  .dark {
+    --background: 33, 37, 41;
+    --foreground: 248, 249, 250;
+    --card: 52, 58, 64;
+    --card-foreground: 248, 249, 250;
+    --popover: 52, 58, 64;
+    --popover-foreground: 248, 249, 250;
+    --primary: 248, 249, 250;
+    --primary-foreground: 33, 37, 41;
+    --secondary: 52, 58, 64;
+    --secondary-foreground: 248, 249, 250;
+    --muted: 73, 80, 87;
+    --muted-foreground: 173, 181, 189;
+    --accent: 73, 80, 87;
+    --accent-foreground: 248, 249, 250;
+    --destructive: 200, 30%, 40%;
+    --destructive-foreground: 248, 249, 250;
+    --border: 52, 58, 64;
+    --input: 73, 80, 87;
+    --ring: 52, 58, 64;
+  }
 }
