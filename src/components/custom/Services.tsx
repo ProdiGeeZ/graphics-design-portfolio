@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 const services = [
     {
-        name: "Brand Identity",
+        name: "Strategy & Brand Identity",
         delay: 0.1,
     },
     {
@@ -13,7 +13,7 @@ const services = [
         delay: 0.2,
     },
     {
-        name: "Motion Graphic",
+        name: "Advertising",
         delay: 0.3,
     },
     {
