@@ -122,7 +122,7 @@ export function ProjectSection() {
                             href={work.link}
                             className="group relative rounded-3xl overflow-hidden bg-neutral-100 aspect-[4/3] block"
                         >
-                            <image
+                            <img
                                 src={work.image}
                                 alt={`${work.title} ${work.subtitle}`}
                                 className="object-cover transition-transform duration-500 group-hover:scale-105"
